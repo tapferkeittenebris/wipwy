@@ -1,6 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-export const metadata: Metadata={title:"Career Connected Learning | Wyoming Business Alliance",description:"Wyoming career-connected learning and work-based learning resource hub."};
-const links=[["For Schools","/schools"],["For employers","/employers"],["Students & families","/students-families"],["Directory","/directory"],["Implementation guide","/implementation"],["Projects","/projects"],["Resources","/resources"],["Dashboard","/dashboard"]];
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><div className="topbar">A statewide resource from the Wyoming Business Alliance <span>Prototype · sample data</span></div><header className="header"><Link href="/" className="brand"><span className="brandmark">W</span><span>WYOMING BUSINESS ALLIANCE<small>CAREER CONNECTED LEARNING</small></span></Link><nav>{links.map(([n,u])=><Link key={u} href={u}>{n}</Link>)}</nav><Link className="button small" href="/portal">Try sample reporting ↗</Link></header>{children}<footer><div className="wrap foot"><div><b>Career Connected Learning</b><p>A practical resource for connecting Wyoming learners with their futures.</p></div><div><b>For assistance</b><p>Contact your district CCL coordinator or regional Workforce Center.</p><a href="https://dws.wyo.gov/tr/dws-division/workforce-centers-and-program-operations/">Find a Wyoming Workforce Center ↗</a></div><div><small>Resource hub • Wyoming Business Alliance</small><p>Implementation guidance is a working draft pending review by WDE, DWS, Wyoming Department of Workforce Services and district counsel.</p></div></div></footer></body></html>}
+
+export const metadata: Metadata={
+  title:"Career Connected Learning | WIP",
+  description:"Wyoming Career Connected Learning resources for schools, employers, students, and community partners.",
+};
+const links=[["School / District","/schools"],["Employer","/employers"],["Student / Parent","/students-families"],["Directory","/directory"],["Implementation guide","/implementation"],["Projects","/projects"],["Resources","/resources"],["FAQ","/faq"]];
+export default function RootLayout({children}:{children:React.ReactNode}){
+  return <html lang="en"><body>
+    <header className="header">
+      <Link href="/" className="brand" aria-label="WIP Career Connected Learning home">
+        <img className="brand-logo" src="/wip-logo.png" alt="Wyoming Innovation Partnership" />
+        <span className="brand-caption">Career Connected Learning</span>
+      </Link>
+      <nav aria-label="Main navigation">{links.map(([name,url])=><Link key={url} href={url}>{name}</Link>)}</nav>
+    </header>
+    {children}
+    <footer><div className="wrap foot">
+      <div><b>Career Connected Learning</b><p>A practical WIP resource connecting Wyoming learners with their futures.</p></div>
+      <div><b>For assistance</b><p>Contact your district CCL coordinator or regional Workforce Center.</p><a href="https://dws.wyo.gov/tr/dws-division/workforce-centers-and-program-operations/">Find a Wyoming Workforce Center ↗</a></div>
+      <div><small>Wyoming Innovation Partnership · WIP</small><p>Implementation guidance is a working draft pending review by WDE, DWS, and district risk/legal staff.</p></div>
+    </div></footer>
+  </body></html>;
+}

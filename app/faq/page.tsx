@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions | Career Connected Learning",
+  description: "Wyoming guidance on Workers’ Compensation and hazardous occupations for work-based learning placements.",
+};
+
+const dwsAgreements = "https://dws.wyo.gov/dws-division/workers-compensation/employers/risk-management/";
+const dwsYouth = "https://dws.wyo.gov/dws-division/labor-standards/employers/can-my-business-hire-youth-ages-14-17/";
+
+export default function FAQPage() {
+  return <><section className="pagehead"><div className="wrap"><div className="eyebrow dark">Common questions</div><h1>Work-based learning FAQ</h1><p className="lead">Starting guidance for Wyoming schools and employers planning student work experiences. Confirm each placement with the appropriate DWS office and district contacts.</p></div></section><main className="pagebody"><div className="wrap faq-list">
+    <section className="card faq-item"><h2>How is Workers’ Compensation provided for a WBL placement?</h2><p>For an eligible Student Learner or Student Training placement covered by an approved agreement, the student is covered under the employer’s Workers’ Compensation policy during the agreement period. The employer must have Workers’ Compensation coverage and is responsible for filing the agreement with the Wyoming Department of Workforce Services (DWS) before training begins and notifying DWS of changes or termination.</p><p>Coverage does not automatically apply to every work-based learning experience. For a placement outside this agreement program, the school and employer should confirm coverage and responsibilities with DWS and document them before the student starts.</p><a className="arrow" href={dwsAgreements} target="_blank" rel="noreferrer">DWS: Student Learner / Student Training Agreements ↗</a></section>
+    <section className="card faq-item"><h2>Can a student complete a WBL placement in a hazardous occupation (HO)?</h2><p>Sometimes, but not simply because the experience is educational or the employer has signed an agreement. Federal child labor rules prohibit minors from working in many hazardous occupations. A limited student-learner exception may apply to certain occupations for eligible students age 16 or older in a qualifying cooperative vocational training program, with a written agreement, work incidental to training, short and intermittent tasks, direct and close supervision, coordinated safety instruction, and a progressive training plan. Other hazardous occupations remain prohibited, and the exception has specific limits.</p><p>Before arranging any potentially hazardous task, the school and employer should confirm the student’s age, exact duties, applicable federal and Wyoming rules, and required DWS agreement with DWS Labor Standards and Workers’ Compensation. Do not assume an agreement makes a prohibited task permissible.</p><a className="arrow" href={dwsYouth} target="_blank" rel="noreferrer">DWS: youth employment and Child Labor 101 resources ↗</a><br/><a className="arrow" href={dwsAgreements} target="_blank" rel="noreferrer">DWS: Student Learner / Student Training Agreements ↗</a></section>
+    <div className="callout">This page is a planning aid, not legal advice. Check current rules and obtain confirmation from DWS before placing a minor in a worksite or task with added hazards.</div>
+  </div></main></>;
+}
