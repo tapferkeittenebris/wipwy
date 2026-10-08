@@ -22,6 +22,7 @@ const areas = [
     icon: "sun",
     summary: "Introduce careers through everyday learning, community stories, and age-appropriate experiences.",
     practices: ["Connect standards-based lessons to local occupations and industries.", "Use career speakers, demonstrations, family conversations, and virtual or age-appropriate workplace encounters.", "Build teamwork, communication, responsibility, and curiosity through classroom projects."],
+    standards: ["K-2.CTE.1.2 Identify and explore different jobs and careers in the home, school, and local community.", "3-5.CTE.1.2 Identify and describe different jobs and careers in the community, state, and nation.", "3-5.CTE.1.3 Explain how different jobs help provide the goods and services to satisfy the needs and wants of the community."],
     resources: [["Adapt a K–5 Wyoming industry project", "/projects#project-0"], ["Review the WIP best-practice foundations", "#foundations"]],
   },
   {
@@ -32,6 +33,7 @@ const areas = [
     icon: "compass",
     summary: "Help students connect interests, strengths, and course choices with careers and pathways.",
     practices: ["Connect interests, values, and aptitudes to career clusters and pathways.", "Invite direct interaction with professionals through fairs, visits, and classroom partnerships.", "Use industry challenges, maker experiences, and projects to practice communication and workplace norms."],
+    standards: ["6-8.CTE.1.1 Conduct an inventory of personal skills, aptitudes, and interests to identify potential career pathways.", "6-8.CTE.1.2 Explore several career pathways, taking into consideration factors such as outlook, salary, education and training, duties, location, and lifestyle.", "6-8.CTE.1.3 Explain how different industries and careers contribute to local communities and Wyoming as a whole.", "6-8.CTE.1.4 Discuss the employment process (applications, interviews, accepting positions)."],
     resources: [["Adapt a grades 6–8 industry challenge", "/projects#project-1"], ["Find a Wyoming employer or intermediary", "/directory"]],
   },
   {
@@ -42,6 +44,7 @@ const areas = [
     icon: "briefcase",
     summary: "Move from broad exploration toward sustained, mentored learning and documented next steps.",
     practices: ["Offer site visits and job shadows, then support student-chosen internships, apprenticeships, clinicals, or capstones.", "Connect WBL with CTE, dual credit, credentials, and explicit learning objectives.", "Document growth through portfolios, presentations, reflections, and supervisor feedback; reduce barriers to paid placements."],
+    standards: ["9-12.CTE.1.1 Identify and apply personal strengths, interests, and values to explore and compare potential career pathways.", "9-12.CTE.1.2 Locate, evaluate, and apply information from reliable resources (e.g., workforce data, mentors, local industry experts, experiential learning, etc.) to explore careers and support informed decision-making to develop and refine a goal-oriented career plan.", "9-12.CTE.1.4 Identify, prepare, and update resources, and demonstrate the skills (e.g., career planning, résumé development, interview preparation, etc.) necessary to pursue a chosen career path."],
     resources: [["Explore a healthcare design project", "/projects#project-2"], ["Explore a construction design project", "/projects#project-3"], ["Open the student learning plan", "/resources#template-student-learning-plan"], ["Open the employer mentor evaluation", "/resources#template-employer-mentor-evaluation"]],
   },
   {
@@ -91,6 +94,7 @@ export default function DistrictGuide() {
     <section className="area-details" aria-label="Best practices and resources by working area">
       {areas.map(area=><article className="area-detail" id={area.id} key={area.id}>
         <div className="area-detail-head"><AreaIcon name={area.icon}/><div><div className="eyebrow dark">{area.stage}</div><h2>{area.title}</h2><p>{area.summary}</p></div></div>
+        {area.standards?.length ? <div className="standards-block"><h3>Wyoming CTE standards for this level</h3><ul className="standards-list">{area.standards.map(x=><li key={x}>{x}</li>)}</ul></div> : null}
         <div className="area-detail-columns"><div><h3>Best-practice starting points</h3><ul className="list">{area.practices.map(x=><li key={x}>{x}</li>)}</ul></div><div><h3>Pair the practice with a resource</h3><div className="practice-links">{area.resources.map(([label,href])=><Link key={label} href={href}>{label} →</Link>)}</div></div></div>
       </article>)}
     </section>
@@ -98,13 +102,6 @@ export default function DistrictGuide() {
     <section id="foundations" className="district-intro"><div className="eyebrow dark">WIP CCL K–12 Best Practices</div><h2>Ten foundations for strong CCL</h2><p>Use these foundations to design experiences, assess program quality, and identify the next improvement step.</p></section>
     <div className="foundation-grid">{foundations.map(([title,text],i)=><article className="foundation-card" key={title}><span className="foundation-number">{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
 
-    <section className="district-intro rubric-section"><div className="eyebrow dark">District self-check</div><h2>Quality rubric: where is the program now?</h2><p>Use this brief rubric with the district reflection. “Sustained” practice is a direction of travel; progress can look different by school, grade band, and local context.</p></section>
-    <div className="tablewrap"><table className="rubric"><thead><tr><th>Dimension</th><th>Getting started</th><th>Building</th><th>Sustained practice</th></tr></thead><tbody>
-      <tr><td>Access & continuum</td><td>Experiences are occasional or depend on individual initiative.</td><td>Grade-band opportunities are planned; barriers are being identified.</td><td>Every learner can access an intentional progression, with barriers addressed.</td></tr>
-      <tr><td>Learning & partnerships</td><td>Career activities have limited links to learning goals.</td><td>Objectives and partner roles are documented for many experiences.</td><td>Experiences align to learning, employers have clear roles, and mentors provide feedback.</td></tr>
-      <tr><td>Student ownership</td><td>Reflection and next steps are informal.</td><td>Students reflect and some document skills or goals.</td><td>Students use evidence, feedback, and advising to direct their next steps.</td></tr>
-      <tr><td>Improvement & evidence</td><td>Participation is not consistently recorded.</td><td>District teams periodically discuss participation and completed experiences.</td><td>Partners review who participates, what learners demonstrate, and which next steps they pursue to improve access and quality.</td></tr>
-    </tbody></table></div>
     <section className="district-intro"><div className="eyebrow dark">Wyoming DWS resources</div><h2>Student work experience agreements & youth work rules</h2><p>Use current state and federal guidance when planning placements involving minors, especially in hazardous occupations.</p></section>
     <div className="resource"><div><b>Student Learner / Student Training Agreements</b><small>Wyoming DWS Workers’ Compensation: program details, eligibility, and agreement forms</small></div><a className="arrow" href="https://dws.wyo.gov/dws-division/workers-compensation/employers/risk-management/" target="_blank" rel="noreferrer">Open DWS resource ↗</a></div>
     <div className="resource"><div><b>Child Labor 101 & Wyoming youth work rules</b><small>Wyoming DWS guidance for age limits, work hours, prohibited occupations, and youth employment resources</small></div><a className="arrow" href="https://dws.wyo.gov/dws-division/labor-standards/employers/can-my-business-hire-youth-ages-14-17/" target="_blank" rel="noreferrer">Open DWS youth work guidance ↗</a></div>
