@@ -1,0 +1,2 @@
+import {AdminAccess} from "../site-content";
+export default function AdminPage(){return <><section className="pagehead"><div className="wrap"><div className="eyebrow dark">Site administration</div><h1>Portal access</h1><p className="lead">Provision district data submitters. Only the configured site administrator can manage this list.</p></div></section><main className="pagebody"><div className="wrap"><AdminAccess/></div></main></>}
