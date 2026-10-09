@@ -16,3 +16,5 @@ footer{background:var(--navy);color:#fff}.foot{padding-top:38px;padding-bottom:3
 .area-detail-columns .list{list-style-type:disc;padding-left:24px;margin:10px 0 0}.area-detail-columns .list li{padding-left:3px}.area-detail-columns .list li::marker{color:var(--red)}
 
 .standards-block{margin-top:18px;padding:16px 18px;background:var(--paper);border-left:3px solid var(--gold)}.standards-block h3{font-size:16px;margin:0 0 8px}.standards-list{list-style:disc;padding-left:23px;margin:0}.standards-list li{padding-left:3px;margin:5px 0;line-height:1.5}.standards-list li::marker{color:var(--red)}
+
+body:has(.home-hero) > footer{display:none}
