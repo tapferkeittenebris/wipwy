@@ -20,7 +20,7 @@ export default function RootLayout({children}:{children:React.ReactNode}){
     <footer><div className="wrap foot">
       <div><b>Career Connected Learning</b><p>A practical WIP resource connecting Wyoming learners with their futures.</p></div>
       <div><b>For assistance</b><p>Contact your district CCL coordinator or regional Workforce Center.</p><a href="https://dws.wyo.gov/tr/dws-division/workforce-centers-and-program-operations/">Find a Wyoming Workforce Center ↗</a></div>
-      <div><small>Wyoming Innovation Partnership · WIP</small><p>Implementation guidance is a working draft pending review by WDE, DWS, and district risk/legal staff.</p></div>
+      <div><small>Wyoming Innovation Partnership · WIP</small></div>
     </div></footer>
   </body></html>;
 }
