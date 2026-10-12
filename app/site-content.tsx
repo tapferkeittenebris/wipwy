@@ -7,9 +7,6 @@ const directory=[
   {name:"Wyoming Department of Workforce Services — Workforce Centers",region:"Statewide",sector:"Public service",experience:"Career exploration · work experience · employer connections",url:"https://dws.wyo.gov/tr/dws-division/workforce-centers-and-program-operations/"},
   {name:"Wyoming Business Alliance",region:"Statewide",sector:"Business & entrepreneurship",experience:"Employer engagement · career exploration",url:"https://www.wyomingbusinessalliance.com/"},
   {name:"Wyoming Department of Education — CTE",region:"Statewide",sector:"Education · all sectors",experience:"Career pathways · work-based learning",url:"https://edu.wyoming.gov/educators/cte/"},
-  {name:"Experience Work",region:"Statewide",sector:"Cross-sector",experience:"Career exploration · experiential learning",url:"https://experience.work/"},
-  {name:"All4Ed",region:"National",sector:"Education · all sectors",experience:"Career-connected learning research · tools",url:"https://all4ed.org/"},
-  {name:"Advance CTE",region:"National",sector:"Education · all sectors",experience:"Career pathways · implementation resources",url:"https://careertech.org/"},
 ];
 
 export function Directory(){
