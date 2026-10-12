@@ -10,8 +10,8 @@ export default function Home(){
         <div className="audience-row">
           <h2 className="audience-heading">I am a:</h2>
           <div className="actions role-actions">
-            <Link className="button" href="/students-families">Student / Parent</Link>
-            <Link className="button" href="/employers">Employer</Link>
+            <Link className="button pending" href="/students-families">Student / Parent</Link>
+            <Link className="button pending" href="/employers">Employer</Link>
             <Link className="button" href="/schools">School / District</Link>
           </div>
         </div>
