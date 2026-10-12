@@ -10,7 +10,7 @@ const areas = [
     summary: "Introduce careers through everyday learning, community stories, and age-appropriate experiences.",
     practices: ["Introduce students to occupations, industries, and local careers, including careers they may not otherwise encounter.", "Design units and lessons that connect standards to real-world learning and career opportunities.", "Help students see how subjects such as mathematics, science, reading, and technology are used in real occupations.", "Incorporate industry partners, career speakers, career days, demonstrations, virtual experiences, and age-appropriate workplace visits.", "Provide age-appropriate responsibilities and projects that develop teamwork, communication, responsibility, and accountability.", "Encourage families to reinforce career awareness and conversations outside of school.", "Broaden students’ understanding of how potential careers connect to their lives and identities."],
     standards: ["K-2.CTE.1.2 Identify and explore different jobs and careers in the home, school, and local community.", "3-5.CTE.1.2 Identify and describe different jobs and careers in the community, state, and nation.", "3-5.CTE.1.3 Explain how different jobs help provide the goods and services to satisfy the needs and wants of the community."],
-    resources: [["Adapt a K–5 Wyoming industry project", "/projects#project-0"]],
+    resources: [],
   },
   {
     id: "area-middle",
@@ -21,7 +21,7 @@ const areas = [
     summary: "Help students connect interests, strengths, and course choices with careers and pathways.",
     practices: ["Help students identify interests, strengths, values, and aptitudes and connect them to career clusters and pathways.", "Design units and lessons that connect standards to real-world learning and career opportunities.", "Use industry partners, career fairs, workplace visits, and employer engagement that allow students to interact directly with professionals.", "Incorporate industry challenges, client projects, maker experiences, and project-based learning connected to real-world problems.", "Provide opportunities to practice professional communication, introductions, interviews, teamwork, and workplace norms.", "Help students understand how their interests and course choices can influence future education and career options.", "Build bridges for selecting a high school pathway, program of study, or area of career interest."],
     standards: ["6-8.CTE.1.1 Conduct an inventory of personal skills, aptitudes, and interests to identify potential career pathways.", "6-8.CTE.1.2 Explore several career pathways, taking into consideration factors such as outlook, salary, education and training, duties, location, and lifestyle.", "6-8.CTE.1.3 Explain how different industries and careers contribute to local communities and Wyoming as a whole.", "6-8.CTE.1.4 Discuss the employment process (applications, interviews, accepting positions)."],
-    resources: [["Adapt a grades 6–8 industry challenge", "/projects#project-1"], ["Find a Wyoming employer or intermediary", "/directory"]],
+    resources: [["Find a Wyoming employer or intermediary", "/directory"]],
   },
   {
     id: "area-high-school",
@@ -32,7 +32,7 @@ const areas = [
     summary: "Move from broad exploration toward sustained, mentored learning and documented next steps.",
     practices: ["Provide 9th and 10th graders with multiple site visits, job shadows, and other opportunities to see the workplace firsthand.", "Offer multi-week or semester-long internships, apprenticeships, clinicals, or capstone projects with explicit learning objectives.", "Support students in choosing and designing their own path from job shadows to internships, apprenticeships, clinicals, or capstone projects.", "Integrate WBL with CTE programs, dual credit, and postsecondary education so students can earn industry-recognized credentials, certifications, badges, or other evidence of workplace competency.", "Develop curriculum and instruction on professionalism, workplace expectations, safety, résumés, and interviewing.", "Give students opportunities to practice employment, financial, technical, and entrepreneurial skills in realistic settings.", "Use student success plans, portfolios, presentations, and industry supervisor evaluations to document growth and inform postsecondary planning, employment, and career transitions.", "Reduce barriers to participation, including through paid placements, and monitor participation by student group to expand opportunities for underserved students."],
     standards: ["9-12.CTE.1.1 Identify and apply personal strengths, interests, and values to explore and compare potential career pathways.", "9-12.CTE.1.2 Locate, evaluate, and apply information from reliable resources (e.g., workforce data, mentors, local industry experts, experiential learning, etc.) to explore careers and support informed decision-making to develop and refine a goal-oriented career plan.", "9-12.CTE.1.4 Identify, prepare, and update resources, and demonstrate the skills (e.g., career planning, résumé development, interview preparation, etc.) necessary to pursue a chosen career path."],
-    resources: [["Explore a healthcare design project", "/projects#project-2"], ["Explore a construction design project", "/projects#project-3"], ["Open the student learning plan", "/resources#template-student-learning-plan"], ["Open the employer mentor evaluation", "/resources#template-employer-mentor-evaluation"]],
+    resources: [["Open the student learning plan", "/resources#template-student-learning-plan"], ["Open the employer mentor evaluation", "/resources#template-employer-mentor-evaluation"]],
   },
   {
     id: "area-beyond-school",
@@ -42,7 +42,7 @@ const areas = [
     icon: "bridge",
     summary: "Connect afterschool, summer, and community learning with in-school pathways and future opportunities.",
     practices: ["Collaborate with afterschool and summer programs, youth organizations, and other community partners.", "Align STEM, maker, entrepreneurship, service-learning, and other programming with in-school career pathways.", "Use afterschool, summer, and weekend hours to accommodate students whose schedules make traditional placements difficult.", "Connect students with youth employment programs, workforce organizations, entrepreneurship activities, and community projects.", "Engage industry professionals and other mentors in projects and activities that can lead to additional WBL opportunities.", "Use portfolios, badges, competencies, or credit to recognize meaningful CCL completed outside the traditional school day."],
-    resources: [["Plan a student reflection and next step", "/projects#project-5"], ["Connect with regional partners", "/directory"], ["Browse templates and trusted links", "/resources"]],
+    resources: [["Connect with regional partners", "/directory"], ["Browse templates and trusted links", "/resources"]],
   },
 ];
 
