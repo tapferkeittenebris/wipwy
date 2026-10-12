@@ -82,7 +82,6 @@ export default function DistrictGuide() {
       {areas.map(area=><article className="area-detail" id={area.id} key={area.id}>
         <div className="area-detail-head"><AreaIcon name={area.icon}/><div><div className="eyebrow dark">{area.stage}</div><h2>{area.title}</h2><p>{area.summary}</p></div></div>
         <div className="area-detail-columns"><div><h3>Best-practice starting points</h3><ul className="list">{area.practices.map(x=><li key={x}>{x}</li>)}</ul></div><div><h3>Pair the practice with a resource</h3><div className="practice-links">{area.resources.map(([label,href])=><Link key={label} href={href}>{label} →</Link>)}</div></div></div>
-        {area.standards?.length ? <div className="standards-block"><h3>Wyoming CTE standards for this level</h3><ul className="standards-list">{area.standards.map(x=><li key={x}>{x}</li>)}</ul></div> : null}
       </article>)}
     </section>
 
