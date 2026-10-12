@@ -8,6 +8,7 @@ const outsideResources=[
  {place:'Ohio',abbr:'OH',kind:'oh',title:'Career Coaching',description:'Career Connections Framework · implementation for schools and systems',url:'https://education.ohio.gov/Topics/Career-Tech/Career-Connections/Career-Connections-Framework/Implementation-for-Schools-and-Systems'},
  {place:'Ohio',abbr:'OH',kind:'oh',title:'Career Coaching Handbook',description:'Ohio Department of Education · practical handbook (PDF)',url:'https://education.ohio.gov/getattachment/Topics/Career-Tech/Career-Connections/Career-Connections-Framework/Resources/Career-Coaching-Handbook.pdf.aspx?lang=en-US'},
  {place:'Ohio',abbr:'OH',kind:'oh',title:'Sample Work-Based Learning Resources',description:'Ohio Department of Education · resources for schools and educators',url:'https://education.ohio.gov/Topics/Career-Tech/Work-Based-Learning/Work-Based-Learning-for-Schools-and-Educators'},
+ {place:'National',abbr:'US',kind:'national',title:'YouScience Brightpath',description:'Aptitude/interest assessment · implementation roadmap and playbook',url:'https://resources.youscience.com/rs/806-BFU-539/images/YouScienceBrightpath_ImplementationRoadmap_Playbook.pdf'},
  {place:'National',abbr:'US',kind:'national',title:'CAPS Network',description:'A national network advancing profession-based learning and innovative education.',url:'https://yourcapsnetwork.org/'}
 ];
 function ResourceMark({kind,abbr}:{kind:string;abbr:string}){
