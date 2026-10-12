@@ -45,7 +45,7 @@ const areas = [
     icon: "bridge",
     summary: "Connect afterschool, summer, and community learning with in-school pathways and future opportunities.",
     practices: ["Collaborate with afterschool and summer programs, youth organizations, and other community partners.", "Align STEM, maker, entrepreneurship, service-learning, and other programming with in-school career pathways.", "Use afterschool, summer, and weekend hours to accommodate students whose schedules make traditional placements difficult.", "Connect students with youth employment programs, workforce organizations, entrepreneurship activities, and community projects.", "Engage industry professionals and other mentors in projects and activities that can lead to additional WBL opportunities.", "Use portfolios, badges, competencies, or credit to recognize meaningful CCL completed outside the traditional school day."],
-    resources: [["Connect with regional partners", "/directory"], ["Explore national and state resources", "/outside-wy"]],
+    resources: [["Connect with regional partners", "/directory"], ["Explore national and state resources", "/outside-wy"], ["Mike Rowe Works Scholarship", "https://mikeroweworks.org/scholarship/"]],
   },
 ];
 
