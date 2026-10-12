@@ -6,7 +6,7 @@ export const metadata: Metadata={
   title:"Career Connected Learning | WIP",
   description:"Wyoming Career Connected Learning resources for schools, employers, students, and community partners.",
 };
-const links=[["Student / Parent","/students-families"],["Employer","/employers"],["School / District","/schools"],["Outside WY","/outside-wy"],["Planning Tools","/resources"],["FAQ","/faq"]];
+const links=[["Student / Parent","/students-families"],["Employer","/employers"],["School / District","/schools"],["Outside WY","/outside-wy"],["FAQ","/faq"]];
 export default function RootLayout({children}:{children:React.ReactNode}){
   return <html lang="en"><body>
     <header className="header">
