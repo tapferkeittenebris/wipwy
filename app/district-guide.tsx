@@ -13,7 +13,7 @@ const areas = [
     summary: "Introduce careers through everyday learning, community stories, and age-appropriate experiences.",
     practices: ["Introduce students to occupations, industries, and local careers, including careers they may not otherwise encounter.", "Design units and lessons that connect standards to real-world learning and career opportunities.", "Help students see how subjects such as mathematics, science, reading, and technology are used in real occupations.", "Incorporate industry partners, career speakers, career days, demonstrations, virtual experiences, and age-appropriate workplace visits.", "Provide age-appropriate responsibilities and projects that develop teamwork, communication, responsibility, and accountability.", "Encourage families to reinforce career awareness and conversations outside of school.", "Broaden students’ understanding of how potential careers connect to their lives and identities."],
     standards: ["K-2.CTE.1.2 Identify and explore different jobs and careers in the home, school, and local community.", "3-5.CTE.1.2 Identify and describe different jobs and careers in the community, state, and nation.", "3-5.CTE.1.3 Explain how different jobs help provide the goods and services to satisfy the needs and wants of the community."],
-    resources: [["14 Career Clusters", "https://careertech.org/career-clusters/"]],
+    resources: [["14 Career Clusters", "https://careertech.org/career-clusters/"], ["Classroom to Careers · Park 6 and Buffalo Bill Center of the West", "https://www.park6.org/article/1151079"]],
   },
   {
     id: "area-middle",
