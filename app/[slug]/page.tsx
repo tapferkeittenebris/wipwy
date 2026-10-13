@@ -63,7 +63,6 @@ const assessmentProviders=[
  {name:"SchooLinks",url:"https://www.schoolinks.com",mark:"S",accent:"coral"},
  {name:"Transfr TREK",url:"https://transfrinc.com/",mark:"T",accent:"blue"},
  {name:"Xello",url:"https://www.xello.world/en/",mark:"X",accent:"gold"},
- {name:"YouScience Brightpath",url:"https://www.youscience.com",mark:"YS",accent:"teal"},
 ];
 function CareerAssessments(){return <div className="assessment-page">
  <section className="assessment-intro"><div className="assessment-compass" aria-hidden="true"><span>Explore</span><b>YOU</b><i>↗</i></div><div><div className="eyebrow dark">A starting point for student planning</div><h2>Make self-discovery part of the journey.</h2><p>Wyoming’s current middle school CTE standard calls for students to inventory their personal skills, aptitudes, and interests and identify career pathways that fit their results. <a href="https://edu.wyoming.gov/wp-content/uploads/2024/07/2025-Grade-6-Comprehensive-WYCPS_no-PLDs_public.pdf" target="_blank" rel="noreferrer">Standard CV8.1.2 ↗</a> does not prescribe a single test. Assessments can support that work by helping students notice patterns in their strengths and preferences; use results as a starting point for conversation, exploration, coursework, and real experiences.</p></div></section>
