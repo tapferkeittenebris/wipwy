@@ -51,7 +51,6 @@ function OpportunityResources(){return <section className='outside-resources' ar
 const assessmentProviders=[
  {name:"YouScience Brightpath",url:"https://www.youscience.com",mark:"YS",accent:"teal"},
  {name:"123Test",url:"http://www.123test.com",mark:"123",accent:"coral"},
- {name:"ACT WorkKeys",url:"https://www.act.org/content/act/en/workforce-solutions/workforce-solutions-k12-educators.html",mark:"ACT",accent:"blue"},
  {name:"ASVAB Career Exploration Program",url:"https://www.asvabprogram.com",mark:"ASVAB",accent:"navy"},
  {name:"Defined Aptitude",url:"https://definedlearning.com/defined-careers",mark:"D",accent:"gold"},
  {name:"Kuder",url:"https://navigator.kuder.com/",mark:"K",accent:"teal"},
@@ -59,9 +58,6 @@ const assessmentProviders=[
  {name:"My Work Ready by WIN Learning",url:"https://www.winlearning.com/Solutions/Career%20Exploration/my-work-ready",mark:"WIN",accent:"blue"},
  {name:"Naviance CCLR",url:"https://www.powerschool.com/solutions/college-career-and-life-readiness/naviance-cclr/",mark:"N",accent:"navy"},
  {name:"Pathful",url:"https://www.pathful.com/",mark:"P",accent:"gold"},
- {name:"PreACT 8/9 & PreACT",url:"https://www.act.org/content/act/en/products-and-services/preact.html",mark:"ACT",accent:"teal"},
- {name:"SchooLinks",url:"https://www.schoolinks.com",mark:"S",accent:"coral"},
- {name:"Transfr TREK",url:"https://transfrinc.com/",mark:"T",accent:"blue"},
  {name:"Xello",url:"https://www.xello.world/en/",mark:"X",accent:"gold"},
 ];
 function CareerAssessments(){return <div className="assessment-page">
