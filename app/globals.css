@@ -105,4 +105,3 @@ body:has(.home-hero) > footer{display:none}
 .youth-source-links{display:flex;flex-wrap:wrap;gap:12px 22px;padding-top:15px;margin-top:15px;border-top:1px solid var(--line);font-size:12px}
 @media(max-width:720px){.youth-safety{padding:23px 16px}.youth-age-grid{grid-template-columns:1fr}.youth-hazard-list{grid-template-columns:1fr}.youth-age-card{grid-template-columns:52px 1fr;padding:16px 13px;gap:12px}.youth-age-number{width:48px;height:48px;font-size:17px}.youth-agreement{grid-template-columns:1fr}.youth-safety>h2{font-size:27px}}
 
-.internship-grant p{max-width:none;width:100%}
