@@ -2,11 +2,13 @@
 import {useState} from "react";
 
 const regions=["Northwest","Northeast","Southwest","Southeast","Central"];
-const sectors=["Agriculture & natural resources","Energy","Healthcare","Construction & skilled trades","Manufacturing","Tourism & hospitality","Business & entrepreneurship","Public service","Technology"];
+const sectors=["Agriculture & natural resources","Energy","Healthcare","Construction & skilled trades","Manufacturing","Tourism & hospitality","Business & entrepreneurship","Education & workforce development","Public service","Technology"];
 const directory=[
   {name:"Wyoming Department of Workforce Services — Workforce Centers",region:"Statewide",sector:"Public service",experience:"Career exploration · work experience · employer connections",url:"https://dws.wyo.gov/tr/dws-division/workforce-centers-and-program-operations/"},
   {name:"Wyoming Business Alliance",region:"Statewide",sector:"Business & entrepreneurship",experience:"Employer engagement · career exploration",url:"https://www.wyomingbusinessalliance.com/"},
   {name:"Wyoming Department of Education — CTE",region:"Statewide",sector:"Education · all sectors",experience:"Career pathways · work-based learning",url:"https://edu.wyoming.gov/educators/cte/"},
+  {name:"Northern Wyoming Career Pathways Partnership (NWCPP)",region:"Northeast",sector:"Education & workforce development",experience:"Regional intermediary · career pathways · employer connections · work-based learning",url:"https://www.sheridan.edu/nwcpp/",contactUrl:"https://jobs.sheridan.edu/postings/4797",contactLabel:"Sheridan College pathway contact role"},
+
 ];
 
 export function Directory(){
@@ -28,7 +30,7 @@ export function Directory(){
       <select value={experience} onChange={event=>setExperience(event.target.value)} aria-label="Filter by experience type"><option>All experiences</option>{["Career exploration","work experience","employer connections","career pathways"].map(item=><option key={item}>{item}</option>)}</select>
     </div>
     <p className="note">Directory listings are starting points. Confirm current programs, service area, and availability directly with each organization.</p>
-    {filtered.map(item=><div className="resource" key={item.name}><div><b>{item.name}</b><small>{item.region} · {item.sector} · {item.experience}</small></div><a className="arrow" href={item.url} target="_blank" rel="noreferrer">Visit ↗</a></div>)}
+    {filtered.map(item=><div className="resource" key={item.name}><div><b>{item.name}</b><small>{item.region} · {item.sector} · {item.experience}</small></div><div className="directory-actions"><a className="arrow" href={item.url} target="_blank" rel="noreferrer">{item.name.includes("NWCPP")?"NWCPP overview ↗":"Visit ↗"}</a>{item.contactUrl&&<a className="arrow" href={item.contactUrl} target="_blank" rel="noreferrer">{item.contactLabel} ↗</a>}</div></div>)}
     {!filtered.length&&<div className="callout">No partners match those filters. Try a broader search.</div>}
   </>;
 }
