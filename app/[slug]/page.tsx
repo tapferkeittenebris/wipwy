@@ -6,6 +6,7 @@ const pages:any={'career-assessments':{eyebrow:'Explore student strengths',title
 const outsideResources=[
  {place:'National',abbr:'US',kind:'national',title:'Experience Work',description:'A profession-based learning platform with stories, practical resources, and tools for building real-world career experiences.',url:'https://experience.work/'},
  {place:'National',abbr:'US',kind:'national',title:'All4Ed',description:'National education organization offering career-connected learning research, tools, and resources.',url:'https://all4ed.org/'},
+ {place:'National',abbr:'US',kind:'national',title:'Future Ready Pathways',description:'An All4Ed toolkit for school and district leaders to build coherent, career-connected systems grounded in real outcomes.',url:'https://futurereadypathways.org/'},
  {place:'National',abbr:'US',kind:'national',title:'Advance CTE',description:'National resources for career pathways, implementation, and career and technical education.',url:'https://careertech.org/'},
  {place:'National',abbr:'US',kind:'national',title:'YouScience Brightpath',description:'Aptitude/interest assessment · implementation roadmap and playbook',url:'https://resources.youscience.com/rs/806-BFU-539/images/YouScienceBrightpath_ImplementationRoadmap_Playbook.pdf'},
  {place:'National',abbr:'US',kind:'national',title:'CAPS Network',description:'A national network advancing profession-based learning and innovative education.',url:'https://yourcapsnetwork.org/'},
