@@ -79,3 +79,28 @@ body:has(.home-hero) > footer{display:none}
 .assessment-source a{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:760px){.assessment-intro{grid-template-columns:1fr;padding:25px 22px;text-align:center}.assessment-compass{width:140px;height:140px}.assessment-compass:before{height:118px}.assessment-compass:after{width:118px}.assessment-intro h2{font-size:26px}.assessment-compare{grid-template-columns:1fr;margin-bottom:38px}.assessment-compare>div{border-right:0;border-bottom:1px solid var(--line)}.assessment-compare>div:last-child{border-bottom:0}.assessment-heading{align-items:flex-start;flex-direction:column;gap:9px}.assessment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:500px){.assessment-grid{grid-template-columns:1fr}.assessment-card{min-height:150px}.assessment-note{grid-template-columns:1fr}}
+
+/* Employer youth work and WBL safety guidance */
+.youth-safety{margin:40px 0 38px;padding:30px;background:#f4f5f8;border-top:4px solid var(--gold)}
+.youth-safety>h2{margin:7px 0 10px;font-size:31px}
+.youth-safety-lead{max-width:850px;margin:0;color:var(--muted);font-size:15px;line-height:1.65}
+.youth-age-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:23px 0}
+.youth-age-card{display:grid;grid-template-columns:66px 1fr;gap:15px;align-items:start;padding:19px;background:#fff;border:1px solid var(--line)}
+.youth-age-number{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--navy);color:#fff;font:700 20px/1 "Franklin Gothic Medium",Arial,sans-serif}
+.youth-age-card:nth-child(2) .youth-age-number{background:var(--red)}
+.youth-age-card h3,.youth-hazard-block h3,.youth-agreement h3{font-size:18px;margin:2px 0 7px}
+.youth-age-card p,.youth-hazard-block p,.youth-agreement p{margin:0;color:var(--muted);font-size:13px;line-height:1.62}
+.youth-hazard-block{padding:22px 23px;background:#fff;border:1px solid var(--line)}
+.youth-hazard-block>div:first-child{max-width:760px}
+.youth-hazard-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 28px;margin:18px 0 14px;padding-left:20px}
+.youth-hazard-list li{padding-left:2px;color:var(--ink);font-size:13px;line-height:1.5}
+.youth-hazard-list li::marker{color:var(--red)}
+.youth-hazard-foot{padding-top:13px;border-top:1px solid var(--line)}
+.youth-hazard-foot a,.youth-source-links a{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.youth-agreement{display:grid;grid-template-columns:44px 1fr;gap:16px;margin-top:14px;padding:22px;background:#fff8e6;border-left:4px solid var(--gold)}
+.youth-agreement-icon{display:grid;place-items:center;width:39px;height:39px;border-radius:50%;background:var(--gold);color:var(--navy);font-size:22px;font-weight:700}
+.youth-agreement-button{margin-top:15px;background:var(--navy);color:#fff}
+.youth-agreement-button:hover{background:var(--blue)}
+.youth-safety-note{margin:14px 0 0;padding:15px 17px;background:#fff;border-left:3px solid var(--red);color:var(--ink);font-size:13px;line-height:1.6}
+.youth-source-links{display:flex;flex-wrap:wrap;gap:12px 22px;padding-top:15px;margin-top:15px;border-top:1px solid var(--line);font-size:12px}
+@media(max-width:720px){.youth-safety{padding:23px 16px}.youth-age-grid{grid-template-columns:1fr}.youth-hazard-list{grid-template-columns:1fr}.youth-age-card{grid-template-columns:52px 1fr;padding:16px 13px;gap:12px}.youth-age-number{width:48px;height:48px;font-size:17px}.youth-agreement{grid-template-columns:1fr}.youth-safety>h2{font-size:27px}}
