@@ -55,6 +55,7 @@ function OpportunityResources(){const now=Date.now();const active=opportunityRes
 
 const assessmentProviders=[
  {name:"YouScience Brightpath",url:"https://www.youscience.com",mark:"YS",accent:"teal"},
+ {name:"Gallup CliftonStrengths (formerly StrengthsFinder)",url:"https://www.gallup.com/cliftonstrengths/en/strengthsfinder.aspx",mark:"CS",accent:"blue"},
  {name:"123Test",url:"http://www.123test.com",mark:"123",accent:"coral"},
  {name:"ASVAB Career Exploration Program",url:"https://www.asvabprogram.com",mark:"ASVAB",accent:"navy"},
  {name:"Defined Aptitude",url:"https://definedlearning.com/defined-careers",mark:"D",accent:"gold"},
